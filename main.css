@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+  margin: 0;
+  transition: margin-left .5s;
+}
+
+nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: left;
+}
+
+nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+article {
+  padding: 30px 10%;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  padding: 10px;
+  width: 25%;
+  margin: 5px 5px;
+}
+
+@media screen and (max-width: 450px) {
+  header img {
+    width: 30%;
+  }
+
+  .box {
+    width: 80%;
+  }
+}
