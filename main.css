@@ -10,6 +10,7 @@ body {
   margin: 0;
   transition: margin-left .5s;
   font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 
 nav {
@@ -35,22 +36,24 @@ nav a {
   transition: 0.3s;
 }
 
+.icon {
+  font-size: 52px;
+  text-decoration: none;
+}
+
 nav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
   margin-left: 50px;
   color: var(--color-accent);
 }
 
 .openbtn {
-  text-decoration: none;
   position: fixed;
   top: 0;
   left: 0;
   margin: 8px 0 0 30px;
-  font-size: 36px;
   color: var(--color-accent);
 }
 
@@ -61,7 +64,11 @@ main {
 }
 
 article {
-  padding: 30px 10%;
+  padding: 60px 10%;
+}
+
+article h1 {
+  margin-top: 0;
 }
 
 .dark {
@@ -84,6 +91,12 @@ article {
   padding: 10px;
   width: 25%;
   margin: 5px 5px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 450px) {

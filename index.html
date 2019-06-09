@@ -7,17 +7,17 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body id="body">
-<a href="javascript:void(0)" class="openbtn" onclick="openNav()">&#9636;</a>
+<a href="javascript:void(0)" class="openbtn icon" onclick="openNav()">&#9776;</a>
 <nav id="main_nav" class="dark">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a>About</a>
-  <a>Services</a>
-  <a>Reviews</a>
-  <a>Contact</a>
+  <a href="javascript:void(0)" class="closebtn icon" onclick="closeNav()">&times;</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
 </nav>
-<header onclick="openNav()"><img src="images/vivereplus-logo-600px.png"/></header>
+<header><img src="images/vivereplus-logo-600px.png"/></header>
 <main>
-  <article class="dark">
+  <article id="about" class="dark">
     <h1>O nás</h1>
     <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -28,7 +28,7 @@
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </article>
-  <article>
+  <article id="services">
     <h1>Služby</h1>
     <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -39,7 +39,7 @@
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </article>
-  <article class="dark">
+  <article id="reviews" class="dark">
     <h1>Reviews</h1>
     <div class="boxes">
       <div class="box light">
@@ -57,7 +57,28 @@
         <hr>
         <p>Awesome site, awesome services.</p>
       </div>
+      <div class="box light">
+        <span>Meno: Ben Dover</span>
+        <hr>
+        <p>Awesome site, awesome services.</p>
+      </div>
+      <div class="box light">
+        <span>Meno: Ben Dover</span>
+        <hr>
+        <p>Awesome site, awesome services.</p>
+      </div>
     </div>
+  </article>
+  <article id="contact">
+    <h1>Kontakt</h1>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
   </article>
 </main>
 <footer>
@@ -65,13 +86,13 @@
 </footer>
 <script>
 function openNav() {
-  document.getElementById("main_nav").style.width = "250px";
-  document.getElementById("body").style.marginLeft = "250px";
+  document.getElementById("main_nav").style.width = "250px"
+  document.getElementById("body").style.marginLeft = "250px"
 }
 
 function closeNav() {
-  document.getElementById("main_nav").style.width = "0";
-  document.getElementById("body").style.marginLeft = "0";
+  document.getElementById("main_nav").style.width = "0"
+  document.getElementById("body").style.marginLeft = "0"
 } 
 </script>
 </body>
