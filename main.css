@@ -44,6 +44,16 @@ nav .closebtn {
   color: var(--color-accent);
 }
 
+.openbtn {
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 8px 0 0 30px;
+  font-size: 36px;
+  color: var(--color-accent);
+}
+
 main {
   display: flex;
   flex-direction: column;
