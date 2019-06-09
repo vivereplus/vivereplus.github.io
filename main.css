@@ -1,7 +1,15 @@
+:root {
+  --color-light: white;
+  --color-dark: #6d6e71;
+  --color-accent: #ed1c24;
+}
+
 body {
   text-align: center;
+  color: var(--color-dark);
   margin: 0;
   transition: margin-left .5s;
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -11,7 +19,7 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: var(--color-dark);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -22,7 +30,7 @@ nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
+  color: var(--color-light);
   display: block;
   transition: 0.3s;
 }
@@ -33,6 +41,7 @@ nav .closebtn {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  color: var(--color-accent);
 }
 
 main {
@@ -46,13 +55,13 @@ article {
 }
 
 .dark {
-  background-color: black;
-  color: white;
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
 
 .light {
-  background-color: white;
-  color: black;
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .boxes {
