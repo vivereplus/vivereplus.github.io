@@ -8,7 +8,7 @@
 </head>
 <body id="body">
 <a href="javascript:void(0)" class="openbtn icon" onclick="openNav()">&#9776;</a>
-<nav id="main_nav" class="dark">
+<nav id="main_nav" class="light">
   <a href="javascript:void(0)" class="closebtn icon" onclick="closeNav()">&times;</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
@@ -18,15 +18,17 @@
 <header><img src="images/vivereplus-logo-600px.png"/></header>
 <main>
   <article id="about" class="dark">
-    <h1>O nás</h1>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <div>
+      <h1>O nás</h1>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
   </article>
   <article id="services">
     <h1>Služby</h1>
@@ -87,12 +89,12 @@
 <script>
 function openNav() {
   document.getElementById("main_nav").style.width = "250px"
-  document.getElementById("body").style.marginLeft = "250px"
+  // document.getElementById("body").style.marginLeft = "250px"
 }
 
 function closeNav() {
   document.getElementById("main_nav").style.width = "0"
-  document.getElementById("body").style.marginLeft = "0"
+  // document.getElementById("body").style.marginLeft = "0"
 } 
 </script>
 </body>
