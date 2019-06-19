@@ -46,31 +46,16 @@ nav a:hover {
   transition: 0.1s;
 }
 
-.icon {
-  font-size: 52px;
-  text-decoration: none;
-}
-
-nav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  margin-left: 50px;
-  color: var(--color-accent);
-}
-
-.openbtn {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 8px 0 0 30px;
-  color: var(--color-accent);
-}
-
 main {
   display: flex;
   flex-direction: column;
   padding: 0;
+}
+
+address {
+  display: block;
+  text-align: left;
+  font-style: italic;
 }
 
 article {
@@ -81,33 +66,8 @@ article h1 {
   margin-top: 0;
 }
 
-.dark {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-}
-
-.light {
-  background-color: var(--color-light);
-  color: var(--color-dark);
-}
-
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.box {
-  width: 45%;
-  padding: 10px 10px 30px 10px;
-  margin: 5px 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.5s;
-}
-
-.box:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 14px 28px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.5s;
+article img {
+  width: 50%;
 }
 
 footer {
@@ -132,18 +92,88 @@ td:last-child {
   min-width: 70px;
 }
 
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  color: var(--color-accent);
+}
+
+.openbtn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 8px 0 0 30px;
+  color: var(--color-accent);
+}
+
+.icon {
+  font-size: 52px;
+  text-decoration: none;
+}
+
+.dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.light {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  flex: 49%;
+  max-width: 49%;
+  margin: 0.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+.box p {
+  padding: 10px;
+}
+
+.box:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 14px 28px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+.box:last-child:nth-child(odd) {
+  max-width: 100%;
+  flex: 100%;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.two-column {
+  width: 48%;
+}
+
 .smalltext {
   font-size: 14px;
   color: #999;
 	text-align: justify;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1050px) {
   header img {
     width: 30%;
   }
 
   .box {
-    width: 80%;
+    max-width: 100%;
+    flex: 100%
   }
 }
