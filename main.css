@@ -8,7 +8,6 @@ body {
   text-align: center;
   color: var(--color-dark);
   margin: 0;
-  transition: margin-left .5s;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   scroll-behavior: smooth;
@@ -25,6 +24,7 @@ nav {
   transition: 0.5s;
   padding-top: 60px;
   text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav span {
@@ -39,6 +39,7 @@ nav a {
   color: var(--color-accent);
   display: block;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 nav a:hover {
