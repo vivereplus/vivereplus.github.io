@@ -117,6 +117,7 @@ td:last-child {
 .dark {
   background-color: var(--color-dark);
   color: var(--color-light);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .light {
@@ -166,6 +167,29 @@ td:last-child {
   font-size: 14px;
   color: #999;
 	text-align: justify;
+}
+
+.carousel {
+  
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+
+.carousel-left {
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	margin-left: 30%;
+}
+
+.carousel-right {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	margin-right: 30%;
 }
 
 @media screen and (max-width: 1050px) {

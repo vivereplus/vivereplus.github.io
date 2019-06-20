@@ -32,6 +32,7 @@
       </p>
     </div>
   </article>
+
   <article id="services">
     <h1>Ponuka kurzov</h1>
     <div class="boxes">
@@ -148,99 +149,32 @@ komunikácia, videohovor</td>
 				stresové situácie na pracovisku
         </p>
       </div>
-
-      <div class="box">
-        <h3>Vedenie ľudí</h3>
-        <hr>
-        <table>
-          <tr><td>Leadership I.</td>
-              <td>1 ďeň</td></tr>
-          <tr><td>Leadership II – emocionálna inteligencia lídra</td>
-              <td>2 dni</td></tr>
-          <tr><td>Manager v roli kouča</td>
-              <td>1 ďeň</td></tr>
-          <tr><td>Zmena role – zmena postoja</td>
-              <td>2 dni</td></tr>
-        </table>
-      </div>
-
-      <div class="box">
-        <h3>Kurzy pre asistentky</h3>
-        <hr>
-        <table>
-          <tr><td>Time a stres management pre asistentky</td>
-              <td>1 ďeň</td></tr>
-          <tr><td>Efektívna komunikácia pre asistentky</td>
-              <td>1 ďeň</td></tr>
-          <tr><td>Emocionálna inteligencia pre asistentky</td>
-              <td>1 ďeň</td></tr>
-          <tr><td>Profesionálna asistentka</td>
-              <td>1 ďeň</td></tr>
-        </table>
-      </div>
-
-      <div class="box">
-        <h3>Umenie prezentovať</h3>
-        <hr>
-        <table>
-          <tr><td>Prezentačné zručnosti</td>
-              <td>1 ďeň</td></tr>
-          <tr><td>Trenažér prezentačných zručností</td>
-              <td>2 dni</td></tr>
-        </table>
-      </div>
-
-      <div class="box">
-        <h3>Hodnotenie zamestnancov</h3>
-        <hr>
-        <table>
-          <tr><td>Vedenie hodnotiacich rozhovorov (Evaluation)</td>
-              <td>1 ďeň</td></tr>
-        </table>
-      </div>
-
-      <div class="box">
-        <h3>Vzdelávanie</h3>
-        <hr>
-        <table>
-          <tr><td>Interný lektor</td>
-              <td>2 dni</td></tr>
-          <tr><td>„Silver“ vzdelávanie. (Vzdelávanie pracovníkov 50+)</td>
-              <td>2 dni</td></tr>
-        </table>
-      </div>
     </div>
   </article>
+
   <article id="reviews" class="dark">
     <h1>Referencie</h1>
-    <div class="boxes">
-      <div class="box light">
-        <span>Meno: Dusan Baran</span>
+    <div class="carousel">
+      <div class="carousel-slide">
+				<h3>Stefan</h3>
         <hr>
-        <p>Vyborne sluzby 5/7.</p>
-      </div>
-      <div class="box light">
-        <span>Meno: Romana Sebelova</span>
+				<p>Vybrone</p>
+			</div>
+      <div class="carousel-slide">
+				<h3>Dusan</h3>
         <hr>
-        <p>Dusan je super, neviem co to s tym ma.</p>
-      </div>
-      <div class="box light">
-        <span>Meno: Ben Dover</span>
+				<p>Celkom dobre</p>
+			</div>
+      <div class="carousel-slide">
+				<h3>Ibi</h3>
         <hr>
-        <p>Awesome site, awesome services.</p>
-      </div>
-      <div class="box light">
-        <span>Meno: Ben Dover</span>
-        <hr>
-        <p>Awesome site, awesome services.</p>
-      </div>
-      <div class="box light">
-        <span>Meno: Ben Dover</span>
-        <hr>
-        <p>Awesome site, awesome services.</p>
-      </div>
+				<p>Da sa</p>
+			</div>
+			<div class="carousel-left">&#10094;</div>
+			<div class="carousel-right">&#10095;</div>
     </div>
   </article>
+
   <article id="contact">
     <h1>Kontaktné údaje</h1>
     <div class="columns">
@@ -258,6 +192,7 @@ komunikácia, videohovor</td>
       </div>
     </div>
   </article>
+
   <article id="newsletter" class="dark">
     <div>
       <h1>Newsletter</h1>
@@ -271,6 +206,7 @@ komunikácia, videohovor</td>
       </p>
     </div>
   </article>
+
   <article id="galery">
     <div>
       <h1>Galéria</h1>
@@ -296,6 +232,26 @@ function openNav() {
 function closeNav() {
   document.getElementById("main_nav").style.width = "0"
 } 
+
+function changeSlide(e, v) {
+	e.slides[e.pos].style.display = "none"
+	e.pos += v
+	e.pos = e.pos % e.slides.length
+	if (e.pos == -1) e.pos = e.slides.length - 1
+	e.slides[e.pos].style.display = "block"
+}
+
+[...document.getElementsByClassName("carousel")].forEach(c => {
+  c.pos = 0
+  c.slides = [...c.getElementsByClassName("carousel-slide")]
+	c.left = c.getElementsByClassName("carousel-left")[0]
+	c.right = c.getElementsByClassName("carousel-right")[0]
+
+	c.left.onclick = () => changeSlide(c, -1)
+	c.right.onclick = () => changeSlide(c, 1)
+
+  c.slides[c.pos].style.display = "block"
+})
 </script>
 </body>
 </html> 
