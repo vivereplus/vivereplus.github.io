@@ -1,6 +1,6 @@
 :root {
   --color-light: white;
-  --color-dark: #6d6e71;
+  --color-dark: #b6b6b6;
   --color-accent: #ed1c24;
 }
 
@@ -11,6 +11,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   scroll-behavior: smooth;
+}
+
+header {
+  background-image: url("images/background.jpg");
 }
 
 nav {
