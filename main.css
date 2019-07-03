@@ -1,12 +1,13 @@
 :root {
   --color-light: white;
-  --color-dark: #b6b6b6;
+  --color-text: #808080;
+  --color-dark: #a6a6a6;
   --color-accent: #ed1c24;
 }
 
 body {
   text-align: center;
-  color: var(--color-dark);
+  color: var(--color-text);
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -14,7 +15,7 @@ body {
 }
 
 header {
-  background-image: url("images/background.jpg");
+  background-image: url("images/background-small.jpg");
 }
 
 nav {
@@ -126,7 +127,11 @@ td:last-child {
 
 .light {
   background-color: var(--color-light);
-  color: var(--color-dark);
+  color: var(--color-text);
+}
+
+.light a {
+  color: var(--color-text);
 }
 
 .boxes {
@@ -155,6 +160,10 @@ td:last-child {
 .box:last-child:nth-child(odd) {
   max-width: 100%;
   flex: 100%;
+}
+
+.box a {
+  color: var(--color-text)
 }
 
 .columns {
