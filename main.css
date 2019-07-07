@@ -3,6 +3,7 @@
   --color-text: #808080;
   --color-dark: #a6a6a6;
   --color-accent: #ed1c24;
+  --color-accent-dark: #cd1c24
 }
 
 body {
@@ -212,6 +213,18 @@ td:last-child {
 	position: absolute;
 	right: 0;
 	margin-right: 30%;
+}
+
+#mc_embed_signup {
+  background-color: inherit;
+}
+
+#mc_embed_signup .button {
+  background-color: var(--color-accent-dark);
+}
+
+#mc_embed_signup .button:hover {
+  background-color: var(--color-accent);
 }
 
 @media screen and (max-width: 1050px) {
