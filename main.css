@@ -16,6 +16,7 @@ body {
 
 header {
   background-image: url("images/background-small.jpg");
+  min-height: 90vh;
 }
 
 nav {
@@ -176,6 +177,14 @@ td:last-child {
   width: 48%;
 }
 
+#social li {
+  display: inline-block;
+}
+
+#social {
+  margin: 50px 0 0 0;
+}
+
 .smalltext {
   font-size: 14px;
   color: #999;
@@ -207,7 +216,7 @@ td:last-child {
 
 @media screen and (max-width: 1050px) {
   header img {
-    width: 30%;
+    width: 50%;
   }
 
   .box {
