@@ -327,6 +327,7 @@ address {
 
   .two-column {
     flex: 50%;
+    padding: 0;
   }
 
   #mc_embed_signup {
