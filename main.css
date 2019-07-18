@@ -6,22 +6,28 @@
   --color-accent-dark: #cd1c24
 }
 
+html {
+  font-size: 20;
+}
+
 body {
   text-align: center;
   color: var(--color-text);
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
   scroll-behavior: smooth;
 }
 
 header {
   background: url(images/background-small.jpg) center center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header img {
-  width: 40%;  
-  margin: auto;
+  width: 60%;  
+  height: auto;
 }
 
 nav {
@@ -35,7 +41,7 @@ nav {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 60px;
-  text-align: left;
+  text-align: center;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -47,7 +53,7 @@ nav span {
 nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 4.5rem;
   font-weight: bold;
   color: var(--color-accent);
   display: block;
@@ -73,14 +79,8 @@ main {
   padding: 0;
 }
 
-address {
-  display: block;
-  text-align: left;
-  font-style: italic;
-}
-
 article {
-  padding: 60px 10%;
+  padding: 60px 3%;
 }
 
 article h1 {
@@ -90,10 +90,18 @@ article h1 {
 footer {
   color: white;
   background-color: black;
-  font-size: 16px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 table {
+  font-size: 2.6rem;
   border-collapse: collapse;
   width: 100%;
 }
@@ -106,7 +114,7 @@ th, td {
 
 td:last-child {
   text-align: right;
-  min-width: 70px;
+  min-width: 8rem;
 }
 
 .closebtn {
@@ -126,7 +134,7 @@ td:last-child {
 }
 
 .icon {
-  font-size: 52px;
+  font-size: 10rem;
   text-decoration: none;
 }
 
@@ -146,6 +154,7 @@ td:last-child {
   color: var(--color-text);
 }
 
+/* Services */
 .boxes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,11 +167,9 @@ td:last-child {
 }
 
 .box {
-  -webkit-box-flex: 49%;
-  -ms-flex: 49%;
-  flex: 49%;
-  max-width: 49%;
-  margin: 0.5%;
+  flex: 100%;
+  max-width: 100%;
+  margin: 1.5% 0%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-transition: 0.5s;
@@ -170,7 +177,7 @@ td:last-child {
 }
 
 .box p {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .box:hover {
@@ -191,6 +198,19 @@ td:last-child {
   color: var(--color-text)
 }
 
+.smalltext {
+  font-size: 0.8rem;
+  color: #999;
+	text-align: justify;
+}
+
+/* Contact */
+address {
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+
 .columns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,13 +223,13 @@ td:last-child {
 }
 
 .two-column {
-  flex: 50%;
-  max-width: 50%;
+  flex: 100%;
+  max-width: 100%;
+  padding: 1rem;
 }
 
-.three-column {
-  flex: 30%;
-  max-width: 33%;
+#social ul {
+  padding: 0;
 }
 
 #social li {
@@ -224,71 +244,110 @@ td:last-child {
   width: 50%;
 }
 
-.smalltext {
-  font-size: 14px;
-  color: #999;
-	text-align: justify;
-}
-
-.carousel {
-  
-}
-
-.carousel-slide {
-  display: none;
-  width: 100%;
-}
-
-.carousel-left {
-	cursor: pointer;
-	position: absolute;
-	left: 0;
-	margin-left: 30%;
-}
-
-.carousel-right {
-	cursor: pointer;
-	position: absolute;
-	right: 0;
-	margin-right: 30%;
-}
-
+/* MailChimp */
 #mc_embed_signup {
   background-color: inherit;
 }
 
+#mc_embed_signup input.email {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+}
+
+#mc_embed_signup .clear {
+  width: 100%;
+}
+
 #mc_embed_signup .button {
   background-color: var(--color-accent-dark);
+  display: block;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 #mc_embed_signup .button:hover {
   background-color: var(--color-accent);
 }
 
-#logo {
-    height: 90vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
+/* Gallery */
+.gallery {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell {
+  margin: 1rem;
+}
+
+.cell img {
+  display: block;
+}
+
+/* TABLET */
+@media screen and (min-width: 600px) {
+  .grid {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .cell {
+    width: calc(50% - 2rem);
+  }
 }
 
-.gallery .three-column {
-    padding: 0 4px;
-}
+/* DESKTOP */
+@media screen and (min-width: 1000px) {
+  html { font-size: 14px; }
+  header img { width: 40%; }
+  nav { text-align: left; }
+  nav a { font-size: 2rem; }
+  .icon { font-size: 4rem; }
+  h1 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  table { font-size: 1rem; }
+  .smalltext { font-size: 0.9rem; }
 
-.gallery .three-column img {
-  vertical-align: middle;
-  width: 100%;
-  margin-top: 8px;
-}
-
-@media screen and (max-width: 1050px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
 
   .box {
-    max-width: 100%;
-    -webkit-box-flex: 100%;
-    -ms-flex: 100%;
-    flex: 100%
+    flex: calc(49% - 8px);
+    margin: 8px;
   }
-   
+
+  .two-column {
+    flex: 50%;
+  }
+
+  #mc_embed_signup {
+    text-align: center;
+  }
+
+  #mc_embed_signup .clear {
+    display: inline-block;
+    width: inherit;
+  }
+
+  #mc_embed_signup .button {
+    width: inherit;
+    height: 2rem;
+    font-size: inherit;
+  }
+
+  #mc_embed_signup input.email {
+    display: inline-block;
+    width: 30%;
+    height: 2rem;
+    font-size: inherit;
+  }
 }
