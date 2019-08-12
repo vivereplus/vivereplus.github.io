@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <title>VIVEREPLUS</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 <link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
   #mc_embed_signup {
@@ -171,7 +173,14 @@ komunikácia, videohovor</td>
 
   <article id="reviews" class="dark">
     <h1>Referencie</h1>
-    REFERENCIE BUDU V CAROUSELY
+    <div id="reviews-carousel">
+      <div><h3>1</h3></div>
+      <div><h3>2</h3></div>
+      <div><h3>3</h3></div>
+      <div><h3>4</h3></div>
+      <div><h3>5</h3></div>
+      <div><h3>6</h3></div>
+    </div>
   </article>
 
   <article id="galery">
@@ -243,6 +252,8 @@ komunikácia, videohovor</td>
 <footer>
   © 2017 VIVEREPLUS, s.r.o. All Rights Reserved
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script>
 function openNav() {
   if (window.innerWidth <= 1000) {
@@ -260,6 +271,28 @@ function navTo(anchor) {
   location.hash = '#' + anchor
   if (window.innerWidth <= 1000) { closeNav() }
 }
+
+$("#reviews-carousel").slick({
+  dots: true,
+  speed: 500,
+
+  responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        dots: true
+      }
+    }, {
+      breakpoint: 300,
+      settings: "unslick" // destroys slick
+    }]
+})
 </script>
 </body>
 </html> 
