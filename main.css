@@ -291,6 +291,11 @@ address {
   display: block;
 }
 
+.slick-slide img {
+  display: inline-block;
+  width: 20%;
+}
+
 /* TABLET */
 @media screen and (min-width: 600px) {
   .grid {
@@ -306,7 +311,7 @@ address {
 
 /* DESKTOP */
 @media screen and (min-width: 1000px) {
-  html { font-size: 14px; }
+  html { font-size: 16px; }
   header img { width: 40%; }
   nav { text-align: left; }
   nav a { font-size: 2rem; }
@@ -314,6 +319,7 @@ address {
   h1 { font-size: 2rem; }
   h3 { font-size: 1.5rem; }
   table { font-size: 1rem; }
+  article { padding: 60px 20%; }
   .smalltext { font-size: 0.9rem; }
 
   .cell {
