@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>VIVEREPLUS</title>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-<link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup {
-    background: #fff;
-    clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 100%;
-  }
-</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
 </head>
 
@@ -22,37 +12,22 @@
 <a href="javascript:void(0)" class="openbtn icon" onclick="openNav()">&#9776;</a>
 <nav id="main_nav" class="light">
   <span class="closebtn icon" onclick="closeNav()">&times;</span>
-  <a onclick="navTo('home')">Domov</a>
-  <a onclick="navTo('about')">O mne</a>
-  <a onclick="navTo('services')">Ponuka kurzov</a>
-  <a onclick="navTo('reviews')">Referencie</a>
-  <a onclick="navTo('contact')">Kontaktné údaje</a>
-  <a onclick="navTo('newsletter')">Newsletter</a>
-  <a onclick="navTo('galery')">Galéria</a>
+  <a class="h2 text-left" onclick="navTo('home')">Domov</a>
+  <a class="h2 text-left" onclick="navTo('about')">O mne</a>
+  <a class="h2 text-left" onclick="navTo('services')">Ponuka kurzov</a>
+  <a class="h2 text-left" onclick="navTo('reviews')">Referencie</a>
+  <a class="h2 text-left" onclick="navTo('galery')">Galéria</a>
+  <a class="h2 text-left" onclick="navTo('newsletter')">Newsletter</a>
+  <a class="h2 text-left" onclick="navTo('contact')">Kontaktné údaje</a>
 </nav>
 <header id="home">
-  <img src="images/vivereplus-logo-600px.png" />
+  <img src="images/vivereplus-logo-600px.png" class="img-fluid"/>
 </header>
 <main>
-  <article id="about" class="dark">
-    <div>
+  <article id="about" class="container-fluid dark shadow">
+    <div class="container">
       <h1>O nás</h1>
-      <p>
-      S dôverou a radosťou využívam, rozvíjam svoje schopnosti a talent, aby
-      som tak umožnila využívať a rozvíjať schopnosti, talent a potenciál
-      druhých ľudí.  Motivujem ich, aby mali možnosť rozhodnúť sa pre im
-      fungujúce riešenia, ktoré ich privedú k úspechu.  Som pozorovateľkou
-      života, ktorý je pre mňa neustálou inšpiráciou.  Vo veľkej miere využívam
-      svoj praktický background,  ktorý som získala pôsobením v korporáciách,
-      menších, či väčších obchodných firmách.  Na osobných konzultáciách,
-      školeniach, tréningoch a workshopoch vediem svojich  klientov k budovaniu
-      vlastnej  integrity, rozpoznávaním súvislostí a zákonitostí a vnášaním
-      ich do praxe.  Nesnažím sa o dokonalosť, no vždy o poctivosť v prístupe,
-      výkone i živote samotnom.
-      </p>
-
-      <h2>Predstavenie firmy</h2>
-      <p>
+      <p class="text-justify">
       VIVERE PLUS, s.r.o. je modernou  spoločnosťou poskytujúcou lektorské a
       konzultačné služby v oblasti Soft Skills, pôsobiacou na slovenskom trhu od
       roku 2008.   Jej hlavným cieľom  je prostredníctvom komplexného súboru služieb
@@ -65,7 +40,8 @@
     </div>
   </article>
 
-  <article id="services">
+  <article id="services" class="container-fluid">
+    <div class="container">
     <h1>Ponuka školení</h1>
     <h2>Krátke predstavenie kurzov</h2>
     <p>
@@ -77,218 +53,253 @@
       <li><b>skutočný záujem</b>: hodnoty, individuálny prístup, citlivosť a ľudskosť</li>
     </ul>
     <p>
-    a to všetko na frekvencii dialógu, v partnersky priateľskej atmosfére.
+    <br>
+    ...a to všetko na frekvencii dialógu, v partnersky priateľskej atmosfére.
     </p>
-    <div class="boxes">
-      <div class="box">
-        <h3>Riadenie času</h3>
-        <hr>
-        <table>
-          <tr><td>Time a stres management</td>
-              <td>1&nbsp;ďeň, 2&nbsp;dni</td></tr>
-          <tr><td>Time,  stres management a prokrastinácia</td>
-              <td>2&nbsp;dni</td></tr>
-          <tr><td>Efektivita v práci</td>
-              <td>1&nbsp;ďeň</td></tr>
-        </table>
-        <p class="smalltext">
-        Riadenie svojho času, plánovanie a prioritizácia úloh, ako sa
-        vysporiadať so stresom a zabrániť syndrómu vyhorenia.
-        </p>
-      </div>
-
-      <div class="box">
-        <h3>Vyjednávanie</h3>
-        <hr>
-        <table>
-          <tr><td>Vyjednávacie zručnosti</td>
-              <td>1&nbsp;ďeň, 2&nbsp;dni</td></tr>
-          <tr><td>Účinná prezentácia v negociačnom procese</td>
-              <td>1&nbsp;ďeň, 2&nbsp;dni</td></tr>
-          <tr><td>Praktické obchodné zručnosti</td>
-              <td>1&nbsp;ďeň</td></tr>
-        </table>
-        <p class="smalltext">
-        Vyjednávacie prístupy, účinná argumentácia, spoznávanie protistrany.
-        Štruktúra obchodnej prezentácie, metódy a techniky vedenia obchodného rozhovoru.
-        </p>
-      </div>
-
-      <div class="box">
-        <h3>Tímová práca</h3>
-        <hr>
-        <table>
-          <tr><td>Tímová spolupráca – vedenie ľudí v tíme</td>
-              <td>2&nbsp;dni</td></tr>
-          <tr><td>Tímová synergia - workshop (počet osôb 12 – 25)</td>
-              <td>1&nbsp;ďeň</td></tr>
-          <tr><td>Budovanie vzťahov v tíme. Ako správne narábať s odlišnosťami
-v diverzifikovanom tíme.</td>
-              <td>1&nbsp;ďeň</td></tr>
-        </table>
-        <p class="smalltext">
-        Ako účinne viesť ľudí v tíme, faktory ovplyvňujúce efektivitu tímu,
-        prijatie a chápanie jednotlivých typov ľudí v pracovnom tíme.
-        </p>
-      </div>
-
-      <div class="box">
-        <h3>Komunikačné zručnosti</h3>
-        <hr>
-        <table>
-          <tr><td>Profesionálna komunikácia</td>
-              <td>1&nbsp;ďeň</td></tr>
-          <tr><td>Komunikácia manažéra v organizácii</td>
-              <td>1&nbsp;ďeň</td></tr>
-          <tr><td>Asertívna komunikácia v praxi</td>
-              <td>1&nbsp;ďeň</td></tr>
-          <tr><td>Trenažér asertivity</td>
-              <td>2&nbsp;dni</td></tr>
-          <tr><td>Business komunikácia v praxi</td>
-              <td>2&nbsp;dni</td></tr>
-          <tr><td>Dištančná komunikácia: profesionálna telefonická a e-mailová
-komunikácia, videohovor</td>
-              <td>1&nbsp;ďeň</td></tr>
-        </table>
-        <p class="smalltext">
-				Ako efektívne komunikovať, a tým úspešne napredovať v profesijnom i
-				súkromnom živote, ako  viesť rozhovor primerane situácii a typu človeka
-				(tréningový program vhodný aj pre „open space“ pracoviská).  Asertivita, ako
-				spôsob sebapresadenia sa, pozitívneho prístupu k svojmu okoliu, návod na
-				elimináciu konfliktného jednania s problémovými ľuďmi.
-        </p>
-      </div>
-
-      <div class="box">
-        <h3>Motivácia</h3>
-        <hr>
-        <table>
-          <tr><td>Motivácia zamestnancov</td>
-              <td>1&nbsp;ďeň</td></tr>
-          <tr><td>Motivácia – Potenciál – Výkon (workshop)</td>
-              <td>3&nbsp;hodiny</td></tr>
-          <tr><td>Selfmanagement a Emocionálna inteligencia</td>
-              <td>1&nbsp;ďeň, 2&nbsp;dni</td></tr>
-        </table>
-        <p class="smalltext">
-				Ako rozpoznať individuálne potreby a prednosti jednotlivcov a na základe toho
-				ich motivovať k pracovnej výkonnosti, využívať zákonitosti efektívnej motivácie
-				k výkonu a stabilite, ktoré sú zárukou prosperity firmy a konkurenčnou výhodou,
-				ako využívať svoje prednosti, štýl vedenia a viesť motivačné rozhovory s
-				rôznymi typmi pracovníkov
-        </p>
-      </div>
-
-      <div class="box">
-        <h3>Konflikty, ich predchádzanie, riešenie</h3>
-        <hr>
-        <table>
-          <tr><td>Riešenie konfliktných situácií</td>
-              <td>1&nbsp;ďeň</td></tr>
-          <tr><td>Konštruktívne riešenie problémov</td>
-              <td>1&nbsp;ďeň</td></tr>
-        </table>
-        <p class="smalltext">
-				Ako úspešne predchádzať konfliktným situáciám, riešiť vzniknuté konflikty a
-				stresové situácie na pracovisku
-        </p>
-      </div>
-      
-      <div class="box">
-          <a href="docs/ponuka-skoleni.pdf" target="_blank"><h2>Viac informacií</h2></a>
-      </div>      
-    </div>
-  </article>
-
-  <article id="reviews" class="dark">
-    <h1>Referencie</h1>
-    <div id="reviews-carousel">
-      <div>
-        <h3>Mgr. Lucia Komiňáková</h3>
-        <div class="columns">
-          <div class="two-column">
-            <img src="images/lucia_kominakova.jpeg">
-          </div>
-          <div class="two-column">
-            <p>
-            Chief Human Resources Officer<br>
-            DIGMIA, s.r.o.<br>
-            Essential Data, s.r.o.<br>
-            Citadelo, s.r.o.
-            <p>
-          </div>
-        </div>
-        <p>
-        S Máriou som spolupracovala na viacerých interných tréningoch.Citlivo a
-        vnímavo vedela ušiť na mieru školenia, ktoré naplnili naše očakávania.
-        Mária vie navnímať atmosféru a ľudí a ponúknuť tréning,školenie, tak
-        aby bol zaujímavý pre rôzne skupiny ľudí. Pútavo vie vtiahnuť do
-        aktivít a inidividuálne poskytnúť cielené situačné poradenstvo. Vie sa
-        vynikajúco naladiť na ľudí a flexibilne reagovať, tak aby to bolo pre
-        nich užitočné. Bolo vidieť,že ide naplno a so srdcom a sme vďační za
-        skvele strávený čas a to, čo sa zasialo v ľuďoch počas školení.
-        </p>
-      </div>
-
-      <div>
-        <h3>Miroslava Baňasová</h3>
-        <div class="columns">
-          <div class="two-column">
-            <img src="images/mirka_banasova.jpg">
-          </div>
-          <div class="two-column">
-            <p>
-            IT Center of Competence Manager<br>
-            Porsche Slovakia, spol. s.r.o.
+    <div class="card-columns">
+        <div class="card shadow">
+          <h3 class="card-title">Riadenie času</h3>
+          <table class="table table-striped">
+            <tr><td>Time a stres management</td>
+                <td>1&nbsp;ďeň, 2&nbsp;dni</td></tr>
+            <tr><td>Time,  stres management a prokrastinácia</td>
+                <td>2&nbsp;dni</td></tr>
+            <tr><td>Efektivita v práci</td>
+                <td>1&nbsp;ďeň</td></tr>
+          </table>
+          <div class="card-body">
+            <p class="text-left">
+            Riadenie svojho času, plánovanie a prioritizácia úloh, ako sa
+            vysporiadať so stresom a zabrániť syndrómu vyhorenia.
             </p>
           </div>
         </div>
-        <p>
-        Lektorku Majku Černákovú hodnotím veľmi kladne. Keď sa tak zamyslím,
-        tak v podstate jej školenia mám absolvované skoro všetky. Boli pre
-        mňa jedny z najlepších aké som absolvovala. Lektorka išla podľa
-        vyhotovenej osnovy, mala pre nás vytlačené podklady, celý čas sa
-        snažila každého zapájať či už do rozhovorov, alebo úloh. Dozvedeli
-        sme sa mnoho zaujimavých vecí a často krát som sa nad jej vetami
-        naozaj zamyslela. Jej odporúčania som aplikovala do svojho firemného
-        prostredia a skutočne pomohli  Vrelo odporúčam.
-        </p>
-      </div>
+
+        <div class="card shadow">
+          <h3 class="card-title">Vyjednávanie</h3>
+          <table class="table table-striped">
+            <tr><td>Vyjednávacie zručnosti</td>
+                <td>1&nbsp;ďeň, 2&nbsp;dni</td></tr>
+            <tr><td>Účinná prezentácia v negociačnom procese</td>
+                <td>1&nbsp;ďeň, 2&nbsp;dni</td></tr>
+            <tr><td>Praktické obchodné zručnosti</td>
+                <td>1&nbsp;ďeň</td></tr>
+          </table>
+          <div class="card-body">
+            <p class="text-left">
+            Vyjednávacie prístupy, účinná argumentácia, spoznávanie protistrany.
+            Štruktúra obchodnej prezentácie, metódy a techniky vedenia obchodného rozhovoru.
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <h3 class="card-title">Tímová práca</h3>
+          <table class="table table-striped">
+            <tr>
+              <td>Tímová spolupráca – vedenie ľudí v tíme</td>
+              <td>2&nbsp;dni</td>
+            </tr>
+            <tr>
+              <td>Tímová synergia - workshop (počet osôb 12 – 25)</td>
+              <td>1&nbsp;ďeň</td>
+            </tr>
+            <tr>
+              <td>Budovanie vzťahov v tíme. Ako správne narábať s odlišnosťami
+                v diverzifikovanom tíme.</td>
+              <td>1&nbsp;ďeň</td>
+            </tr>
+          </table>
+          <div class="card-body">
+            <p class="text-left">
+              Ako účinne viesť ľudí v tíme, faktory ovplyvňujúce efektivitu tímu,
+              prijatie a chápanie jednotlivých typov ľudí v pracovnom tíme.
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <h3 class="card-title">Komunikačné zručnosti</h3>
+          <table class="table table-striped">
+            <tr><td>Profesionálna komunikácia</td>
+                <td>1&nbsp;ďeň</td></tr>
+            <tr><td>Komunikácia manažéra v organizácii</td>
+                <td>1&nbsp;ďeň</td></tr>
+            <tr><td>Asertívna komunikácia v praxi</td>
+                <td>1&nbsp;ďeň</td></tr>
+            <tr><td>Trenažér asertivity</td>
+                <td>2&nbsp;dni</td></tr>
+            <tr><td>Business komunikácia v praxi</td>
+                <td>2&nbsp;dni</td></tr>
+            <tr><td>Dištančná komunikácia: profesionálna telefonická a e-mailová
+  komunikácia, videohovor</td>
+                <td>1&nbsp;ďeň</td></tr>
+          </table>
+          <div class="card-body">
+            <p class="text-left">
+            Ako efektívne komunikovať, a tým úspešne napredovať v profesijnom i
+            súkromnom živote, ako  viesť rozhovor primerane situácii a typu človeka
+            (tréningový program vhodný aj pre „open space“ pracoviská).  Asertivita, ako
+            spôsob sebapresadenia sa, pozitívneho prístupu k svojmu okoliu, návod na
+            elimináciu konfliktného jednania s problémovými ľuďmi.
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <h3 class="card-title">Motivácia</h3>
+          <table class="table table-striped">
+            <tr><td>Motivácia zamestnancov</td>
+                <td>1&nbsp;ďeň</td></tr>
+            <tr><td>Motivácia – Potenciál – Výkon (workshop)</td>
+                <td>3&nbsp;hodiny</td></tr>
+            <tr><td>Selfmanagement a Emocionálna inteligencia</td>
+                <td>1&nbsp;ďeň, 2&nbsp;dni</td></tr>
+          </table>
+          <div class="card-body">
+            <p class="text-left">
+            Ako rozpoznať individuálne potreby a prednosti jednotlivcov a na základe toho
+            ich motivovať k pracovnej výkonnosti, využívať zákonitosti efektívnej motivácie
+            k výkonu a stabilite, ktoré sú zárukou prosperity firmy a konkurenčnou výhodou,
+            ako využívať svoje prednosti, štýl vedenia a viesť motivačné rozhovory s
+            rôznymi typmi pracovníkov
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <h3 class="card-title">Konflikty, ich predchádzanie, riešenie</h3>
+          <table class="table table-striped">
+            <tr><td>Riešenie konfliktných situácií</td>
+                <td>1&nbsp;ďeň</td></tr>
+            <tr><td>Konštruktívne riešenie problémov</td>
+                <td>1&nbsp;ďeň</td></tr>
+          </table>
+          <div class="card-body">
+            <p class="text-left">
+            Ako úspešne predchádzať konfliktným situáciám, riešiť vzniknuté konflikty a
+            stresové situácie na pracovisku
+            </p>
+          </div>
+        </div> 
     </div>
+    <div>
+      <a href="docs/ponuka-skoleni.pdf" class="btn btn-primary btn-block" target="_blank"><h2>Viac informacií</h2></a>
+    </div>      
+  </div>
   </article>
 
-  <article id="galery">
+  <article id="reviews" class="container-fluid dark shadow pb-5">
+  <h1>Referencie</h1>
+  <hr>
+  <div class="container-fluid">
+    <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h3>Mgr. Lucia Komiňáková</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <img class="img-fluid img-thumbnail shadow" src="images/lucia_kominakova.jpeg" alt="Lucia Komiňáková">
+              </div>
+              <div class="col-md-3">
+                <p>
+                Chief Human Resources Officer<br>
+                DIGMIA, s.r.o.<br>
+                Essential Data, s.r.o.<br>
+                Citadelo, s.r.o.
+                <p>
+              </div>
+              <div class="col-md-6 text-left">
+                S Máriou som spolupracovala na viacerých interných
+                tréningoch.Citlivo a vnímavo vedela ušiť na mieru školenia,
+                ktoré naplnili naše očakávania. Mária vie navnímať atmosféru
+                a ľudí a ponúknuť tréning,školenie, tak aby bol zaujímavý pre
+                rôzne skupiny ľudí. Pútavo vie vtiahnuť do aktivít a
+                inidividuálne poskytnúť cielené situačné poradenstvo. Vie sa
+                vynikajúco naladiť na ľudí a flexibilne reagovať, tak aby to
+                bolo pre nich užitočné. Bolo vidieť,že ide naplno a so srdcom
+                a sme vďační za skvele strávený čas a to, čo sa zasialo v
+                ľuďoch počas školení.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <h3>Miroslava Baňasová</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <img class="img-fluid img-thumbnail shadow" src="images/mirka_banasova.jpg" alt="Mirka Baňasová">
+              </div>
+              <div class="col-md-3">
+                <p>
+                  IT Center of Competence Manager<br>
+                  Porsche Slovakia, spol. s.r.o.
+                </p>
+              </div>
+              <div class="col-md-6 text-left">
+                Lektorku Majku Černákovú hodnotím veľmi kladne. Keď sa tak zamyslím,
+                tak v podstate jej školenia mám absolvované skoro všetky. Boli pre
+                mňa jedny z najlepších aké som absolvovala. Lektorka išla podľa
+                vyhotovenej osnovy, mala pre nás vytlačené podklady, celý čas sa
+                snažila každého zapájať či už do rozhovorov, alebo úloh. Dozvedeli
+                sme sa mnoho zaujimavých vecí a často krát som sa nad jej vetami
+                naozaj zamyslela. Jej odporúčania som aplikovala do svojho firemného
+                prostredia a skutočne pomohli Vrelo odporúčam.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  </article>
+
+  <article id="galery" class="container-fluid">
+  <div class="container">
     <div>
       <h1>Galéria</h1>
-      <div class="gallery">
-        <div class="grid">
-          <div class="cell"><img src="images/gallery/IMG_20190510_111225.jpg" class="responsive-image"></div>
-          <div class="cell"><img src="images/gallery/IMG_20190510_112159.jpg" class="responsive-image"></div>
-          <div class="cell"><img src="images/gallery/IMG_20190510_114640.jpg" class="responsive-image"></div>
-          <div class="cell"><img src="images/gallery/IMG_20190510_114702.jpg" class="responsive-image"></div>
-          <div class="cell"><img src="images/gallery/IMG_20190510_122113.jpg" class="responsive-image"></div>
-          <div class="cell"><img src="images/gallery/IMG_20190510_123728.jpg" class="responsive-image"></div>
-          <div class="cell"><img src="images/gallery/IMG_20190510_125814.jpg" class="responsive-image"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 py-3"><img src="images/gallery/IMG_20190510_111225.jpg" class="img-fluid"></div>
+          <div class="col-md-4 py-3"><img src="images/gallery/IMG_20190510_112159.jpg" class="img-fluid"></div>
+          <div class="col-md-4 py-3"><img src="images/gallery/IMG_20190510_114640.jpg" class="img-fluid"></div>
+          <div class="col-md-4 py-3"><img src="images/gallery/IMG_20190510_114702.jpg" class="img-fluid"></div>
+          <div class="col-md-4 py-3"><img src="images/gallery/IMG_20190510_122113.jpg" class="img-fluid"></div>
+          <div class="col-md-4 py-3"><img src="images/gallery/IMG_20190510_123728.jpg" class="img-fluid"></div>
       </div>
     </div>
+  </div>
   </article>
 
-  <article id="newsletter" class="dark">
-    <div>
+  <article id="newsletter" class="container-fluid dark shadow">
+    <div class="container">
       <h1>Newsletter</h1>
+      <h3>Prihlásiť sa na odoberanie noviniek</h3>
       <!-- Begin Mailchimp Signup Form -->
       <div id="mc_embed_signup">
         <form action="https://gmail.us3.list-manage.com/subscribe/post?u=bdd38a01954a17d574fbef559&amp;id=acc9ce4216"
           method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
           novalidate>
-          <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL">Prihlásiť sa na odoberanie noviniek<label>
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email" required>
+          <div class="form-row" id="mc_embed_signup_scroll">
+            <div class="col-md-10">
+              <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email" required>
+            </div>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                 name="b_bdd38a01954a17d574fbef559_acc9ce4216" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Odoberať" name="subscribe" id="mc-embedded-subscribe"
-                class="button"></div>
+            <div class="clear col-md-2"><input type="submit" value="Odoberať" name="subscribe" id="mc-embedded-subscribe"
+                class="btn btn-primary btn-block"></div>
           </div>
         </form>
       </div>
@@ -296,41 +307,79 @@ komunikácia, videohovor</td>
     </div>
   </article>
 
-  <article id="contact">
+  <article id="contact" class="container-fluid">
+  <div class="container">
     <h1>Kontaktné a platobné údaje</h1>
-    <div class="columns">
-      <div class="two-column">
+    <div class="row my-4">
+      <div class="col-md-6">
+        <img class="img-thumbnail" alt="Portrait of company owner" src="images/portrait.jpg"/>
+      </div>
+      <div class="col-md-6">
         <h3>Mgr. Mária Černáková</h3>
+        <hr>
         <address>
-          VIVERE PLUS, s.r.o.<br>
+          <strong>VIVERE PLUS, s.r.o.</strong><br>
           Zelinárska 2<br>
           821 080 Bratislava<br>
           Zap. v  OR SR BA I,odd.: Sro – vložka číslo: 53022/B<br>
           Email: <a href="mailto:vivereplus@gmail.com" target="_top">vivereplus@gmail.com</a>
         </address> 
-     </div>
-      <div class="two-column">
-        <img alt="Portrait of company owner" src="images/portrait.jpg"/>
+
+        <div class="p-3 gray shadow">
+          <p>
+            IČO: 44 229 607<br>
+            DIČ: 2022638398<br>
+            IČO DPH:SK 2022638398
+          </p>
+
+          <h5><u>Tatrabanka, a.s. Bratislava</u></h5>
+          <p>
+            <strong>Číslo účtu</strong>: 2620852633/1100<br>
+            <strong>SWIFT</strong>: TATRSKBX<br>
+            <strong>IBAN</strong>: SK91 1100 0000002620852633
+          </p>
+        </div>
+
+        <button class="btn btn-primary mt-3" type="button" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
+          Viac info 
+        </button>
+      </div>
+      <div class="collapse m-4" id="collapseInfo">
+        <h3>O vašej lektorke</h3>
+        <p class="text-justify">
+          S dôverou a radosťou využívam, rozvíjam svoje schopnosti a talent, aby
+          som tak umožnila využívať a rozvíjať schopnosti, talent a potenciál
+          druhých ľudí.  Motivujem ich, aby mali možnosť rozhodnúť sa pre im
+          fungujúce riešenia, ktoré ich privedú k úspechu.  Som pozorovateľkou
+          života, ktorý je pre mňa neustálou inšpiráciou.  Vo veľkej miere využívam
+          svoj praktický background,  ktorý som získala pôsobením v korporáciách,
+          menších, či väčších obchodných firmách.  Na osobných konzultáciách,
+          školeniach, tréningoch a workshopoch vediem svojich  klientov k budovaniu
+          vlastnej  integrity, rozpoznávaním súvislostí a zákonitostí a vnášaním
+          ich do praxe.  Nesnažím sa o dokonalosť, no vždy o poctivosť v prístupe,
+          výkone i živote samotnom.
+        </p>
       </div>
     </div>
-    <div id="social">
-      <ul>
-        <a href="https://www.linkedin.com/in/m%C3%A1ria-%C4%8Dern%C3%A1kov%C3%A1-b138b4b2/" target="_blank"><li><img alt="linkedin icon" src="images/linkedin.png"/></li></a>
-        <a href="https://www.facebook.com/Tv%C3%A1rov%C3%A1-gymnastika-196316454127/" target="_blank"><li><img alt="facebook icon" src="images/facebook.png"/></li></a>
-        <a href="https://instagram.com/maria.cernakova_vivereplus?igshid=1i6t0zwocxqmr" target="_blank"><li><img alt="instagram icon" src="images/instagram.png"/></li></a>  
-      </ul>
-    </div>    
+  </div>    
+  </article>
+
+  <article class="container-fluid" id="social">
+    <a class="m-2" href="https://www.linkedin.com/in/m%C3%A1ria-%C4%8Dern%C3%A1kov%C3%A1-b138b4b2/" target="_blank"><img class="social-icon" alt="linkedin icon" src="images/linkedin.png"/></a>
+    <a class="m-2" href="https://www.facebook.com/Tv%C3%A1rov%C3%A1-gymnastika-196316454127/" target="_blank"><img class="social-icon" alt="facebook icon" src="images/facebook.png"/></a>
+    <a class="m-2" href="https://instagram.com/maria.cernakova_vivereplus?igshid=1i6t0zwocxqmr" target="_blank"><img class="social-icon" alt="instagram icon" src="images/instagram.png"/></a>  
   </article>
     
 </main>
 <footer>
   © 2017 VIVEREPLUS, s.r.o. All Rights Reserved
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
 function openNav() {
-  if (window.innerWidth <= 1000) {
+  if (window.innerWidth <= 992) {
     document.getElementById("main_nav").style.width = "100%"
   } else {
     document.getElementById("main_nav").style.width = "20rem"
@@ -345,28 +394,6 @@ function navTo(anchor) {
   location.hash = '#' + anchor
   if (window.innerWidth <= 1000) { closeNav() }
 }
-
-$("#reviews-carousel").slick({
-  dots: true,
-  speed: 500,
-
-  responsive: [{
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        infinite: true
-      }
-    }, {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        dots: true
-      }
-    }, {
-      breakpoint: 300,
-      settings: "unslick" // destroys slick
-    }]
-})
 </script>
 </body>
 </html> 
