@@ -16,15 +16,6 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146417236-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146417236-1');
-</script>
 </head>
 
 <body id="body">
@@ -418,6 +409,14 @@
 <footer>
   © 2017 VIVEREPLUS, s.r.o. All Rights Reserved
 </footer>
+<div class="cookie-consent shadow p-2 text-right" id="gdpr_bar">
+  <span class="mr-3">
+    Na zlepšenie našich služieb používame cookies. Pokračovaním v prezeraní
+    webu súhlasíte so spracovaním dát o vašej návšteve.
+  </span>
+  <button class="btn btn-secondary" onclick="acceptCookies(this)">Zatvoriť</button>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -437,6 +436,18 @@ function closeNav() {
 function navTo(anchor) {
   location.hash = '#' + anchor
   if (window.innerWidth <= 1000) { closeNav() }
+}
+
+function acceptCookies(event) {
+  let e = document.createElement("script")
+  e.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=UA-146417236-1")
+  document.head.appendChild(e)
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-146417236-1');
+
+  document.getElementById("gdpr_bar").style.display = "none"
 }
 </script>
 </body>

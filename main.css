@@ -59,18 +59,39 @@ footer {
 
 .btn {
   border-radius: 0;
+}
+
+.btn-primary {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 }
 
-.btn:hover {
+.btn-primary:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 }
 
-.btn:active {
+.btn-primary:active {
   background-color: var(--color-accent-dark) !important;
   border-color: var(--color-accent-dark) !important;
+}
+
+.btn-secondary {
+  border-color: var(--color-light);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-light);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.btn-secondary:active {
+  border-color: var(--color-light);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .form-control {
@@ -149,4 +170,16 @@ nav a:hover {
     font-size: 5rem; 
     top: -1.8rem;
   }
+}
+
+/* GDPR COOKIE CONSENT BAR */
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  width: 100%;
+  z-index: 9998;
 }
