@@ -66,13 +66,14 @@ body {
 }
 
 header {
-  height: 75vh;
+  height: 60vh;
 
 }
 
 
 
 header img {
+  max-height: 70vh;
   padding: 10vh;
 }
 
